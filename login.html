@@ -1,29 +1,24 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Login page">
-    <meta name="keywords" content="login, username, password">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-</head>
+<?php
+include("header.inc");
+?>
 
-<body>
-    <h1>Login</h1>
+<h2>Login</h2>
 
-    <form method="POST" action="process.php">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br><br>
+<form method="POST" action="process.php">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br><br>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
 
-        <input type="hidden" name="token" value="abc123">
+    <input type="hidden" name="token" value="abc123">
 
-        <input type="submit" value="Login">
-    </form>
-</body>
-</html>
+    <input type="submit" value="Login">
+</form>
+
+<?php
+include("footer.inc");
+?>
